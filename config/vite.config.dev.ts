@@ -11,13 +11,13 @@ export default mergeConfig(
         strict: true,
       },
     },
-    plugins: [
-      eslint({
-        cache: false,
-        include: ['src/**/*.ts', 'src/**/*.tsx', 'src/**/*.vue'],
-        exclude: ['node_modules'],
-      }),
-    ],
+    // plugins: [
+    //   eslint({
+    //     cache: false,
+    //     include: ['src/**/*.ts', 'src/**/*.tsx', 'src/**/*.vue'],
+    //     exclude: ['node_modules'],
+    //   }),
+    // ],
   },
   baseConfig
 );

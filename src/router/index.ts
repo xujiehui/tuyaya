@@ -13,7 +13,12 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      redirect: 'login',
+      redirect: 'yaya',
+    },
+    {
+      path: '/yaya',
+      name: 'yaya',
+      component: () => import('@/views/index/index.vue'),
     },
     {
       path: '/login',
