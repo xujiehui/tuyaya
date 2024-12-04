@@ -29,8 +29,8 @@ const router = createRouter({
     //     requiresAuth: false,
     //   },
     // },
-    ...appRoutes,
-    REDIRECT_MAIN,
+    // ...appRoutes,
+    // REDIRECT_MAIN,
     NOT_FOUND_ROUTE,
   ],
   scrollBehavior() {
