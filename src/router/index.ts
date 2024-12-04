@@ -13,21 +13,22 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      redirect: 'yaya',
-    },
-    {
-      path: '/yaya',
-      name: 'yaya',
+      // redirect: 'yaya',
       component: () => import('@/views/index/index.vue'),
     },
-    {
-      path: '/login',
-      name: 'login',
-      component: () => import('@/views/login/index.vue'),
-      meta: {
-        requiresAuth: false,
-      },
-    },
+    // {
+    //   path: '/yaya',
+    //   name: 'yaya',
+    //   component: () => import('@/views/index/index.vue'),
+    // },
+    // {
+    //   path: '/login',
+    //   name: 'login',
+    //   component: () => import('@/views/login/index.vue'),
+    //   meta: {
+    //     requiresAuth: false,
+    //   },
+    // },
     ...appRoutes,
     REDIRECT_MAIN,
     NOT_FOUND_ROUTE,
@@ -37,6 +38,6 @@ const router = createRouter({
   },
 });
 
-createRouteGuard(router);
+// createRouteGuard(router);
 
 export default router;
